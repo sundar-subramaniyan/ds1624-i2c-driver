@@ -136,8 +136,8 @@ static ssize_t ds1624_eeprom_write(struct kobject *kobj, struct bin_attribute *a
 				   char *buf, loff_t off, size_t count)
 {
 	struct i2c_client *client = kobj_to_i2c_client(kobj);
-    s32 ret;
-    u8 command;
+	s32 ret;
+	u8 command;
 	u16 val;
 	int i;
 
